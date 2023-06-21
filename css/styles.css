@@ -947,7 +947,7 @@ align-items: center;
         margin-right: 8px;
         fill: transparent;
 }
-input-check:checked + .check-label span {
+.input-check:checked + .check-label span {
     background-color: var(--header-menu-link);
     border: none;
     fill: var(--button-background-color);
