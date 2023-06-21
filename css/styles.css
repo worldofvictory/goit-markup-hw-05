@@ -12,6 +12,7 @@
         --navy-blue-color: #2e2f42;
         --green-color: #31d0aa;
         --modal-color: #fcfcfc;
+      
 }
 
 body {
@@ -82,6 +83,7 @@ ul {
     
 
     .header-menu-link {
+        display: block;
             position: relative;
             transition: color var(--tran-250);
             font-weight: 500;
@@ -685,6 +687,7 @@ address.call {
 
 .footer {
     padding: 100px 0;
+    background-color: var(--header-menu-link);
 }
 
 .footer .container {
@@ -775,7 +778,8 @@ address.call {
      width: 408px;
      min-height: 584px;
      padding: 72px 24px 24px 24px;
-     background-color: var(--modal-color) 
+     background-color: var(--modal-color);
+    
  }
 
  .modal-close-btn {
@@ -810,9 +814,24 @@ address.call {
     height: 40px;
     border: 1px solid rgba(46, 47, 66, 0.4);
         border-radius: 4px;
-        background-color: transparent;              
+        background-color: transparent; 
+        padding-left: 38px;  
+        outline: transparent;   
+        transition: var(--tran-250);        
+}
+.modal-input::-webkit-outer-spin-button,
+.modal-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.modal-input:focus {
+border-color: var(--portfolio-filters);
 }
 
+
+.modal-input:focus + .modal-svg {
+    fill: var(--portfolio-filters);
+}
 
 .modal-label {
     font-weight: 400;
@@ -828,17 +847,63 @@ address.call {
  }
  .input-wrop { 
     position: relative;
+    margin-bottom: 8px;
  }
  .modal-svg { 
-    stroke: #2E2F42;
+ transition: fill var(--tran-250);
 position: absolute;
-left: 24px;
+left: 16px;
 top: 50%;
 transform: translateY(-50%);
  }
 
+.modal-text-area {
+    width: 100%;
+        height: 120px;
+        border: 1px solid rgba(46, 47, 66, 0.4);
+        border-radius: 4px;
+        background-color: transparent;
+        outline: transparent;
+        padding: 26px 16px 24px 24px;
+        resize: none;
+ }
+.modal-text-area::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+     letter-spacing: 0.04em;
+     color: rgba(46, 47, 66, 0.4);
+}
 
-
+.check-label {
+  
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.04em;
+color: #8E8F99;
+display: flex;
+align-items: center;
+}
+.check-label a {
+    color: #4D5AE5;
+    text-decoration: underline;
+}
+.check-label span {
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+        border-radius: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 8px;
+        fill: transparent;
+}
+input-check:checked + .check-label span {
+    background-color: var(--header-menu-link);
+    border: none;
+    fill: var(--button-background-color);
+}
  .modal-close-svg {
      transition: fill var(--tran-250);
  }
@@ -851,3 +916,24 @@ transform: translateY(-50%);
  .modal-close-btn:is(:hover, :focus) .modal-close-svg {
      fill: var(--first-font);
  }
+ .butt-modal {
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+      display: block;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+        padding: 16px 32px 16px 32px;
+        background: #4D5AE5;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            margin: 24px auto;
+            min-width: 169px;
+                height: 56px;
+ }
+
+ .butt-modal:is(:hover, :focus) { }
