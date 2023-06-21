@@ -749,6 +749,54 @@ address.call {
 .footer .social-media-link:is(:hover, :focus) {
     background-color: var(--green-color);
 }
+.footer-input-col .form {
+    display: flex;
+    gap: 24px;
+    height: min-content;
+    color: var(--first-font)
+}
+.footer-input {
+    border: 1px solid var(--first-font);
+    outline: none;
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    background-color: #4D5AE5;;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--first-font);
+}
+
+.footer-input::placeholder {
+    color: var(--first-font);
+}
+
+.footer-input-col .form-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color var(--tran-250);
+    min-width: 165px;
+    height: 40px;
+}
+
+.footer-input-col .form-button:is(:hover, :focus) {
+    background-color: #404bbf;
+}
+.text {
+    color: var(--first-font);
+    font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    padding-bottom: 24px;
+}
+.form-button-icon {
+    margin-left: 16px;
+}
    
 .modal-backdrop {
     position: fixed;
