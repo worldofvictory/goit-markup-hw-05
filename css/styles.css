@@ -769,6 +769,7 @@ address.call {
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: var(--first-font);
+    background-color: transparent;
 }
 
 .footer-input::placeholder {
@@ -793,6 +794,25 @@ address.call {
         line-height: 1.5;
         letter-spacing: 0.02em;
     padding-bottom: 24px;
+}
+.text-foot {
+    color: var(--first-font);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding-bottom: 24px;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+.form-button {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #4D5AE5;
+    border: none;
+    border-radius: 4px;
 }
 .form-button-icon {
     margin-left: 16px;
