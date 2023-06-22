@@ -891,7 +891,7 @@ border-color: var(--portfolio-filters);
         display: block;
  }
  .modal-field { 
-    margin-bottom: 16px;
+    margin-bottom: 8px;
  }
  .input-wrop { 
     position: relative;
@@ -942,7 +942,7 @@ align-items: center;
     color: #4D5AE5;
     text-decoration: underline;
 }
-.checkbox-block {
+.check {
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
