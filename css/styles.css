@@ -888,14 +888,14 @@ border-color: var(--portfolio-filters);
         letter-spacing: 0.04em;
         color: #8E8F99;
         margin-bottom: 4px;
-        display: flex;
+        display: block;
  }
  .modal-field { 
-    margin-bottom: 8px;
+    margin-bottom: 16px;
  }
  .input-wrop { 
     position: relative;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
  }
  .modal-svg { 
  transition: fill var(--tran-250);
